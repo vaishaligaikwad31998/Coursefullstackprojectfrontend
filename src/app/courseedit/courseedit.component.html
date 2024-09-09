@@ -1,0 +1,29 @@
+<h3 class="text-primary text-center">Edit Course</h3><br>
+
+<div class="container p-3 w-50">
+  <form (ngSubmit)="updateCourse()">
+
+    <div class="mb-3">
+      <label for="id" class="form-label">Course Id</label>
+      <input type="text" [(ngModel)]="course.id" class="form-control" name="id" id="id" readonly>
+    </div>
+
+    <div class="mb-3">
+      <label for="title" class="form-label">Course Title</label>
+      <input type="text" [(ngModel)]="course.title" class="form-control" name="title" id="title" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="description" class="form-label">Course Description</label>
+      <input type="text" [(ngModel)]="course.description" class="form-control" name="description" id="description" required>
+    </div>
+    <div class="mb-3">
+      <label for="duration" class="form-label">Course Duration</label>
+      <input type="text" [(ngModel)]="course.duration" class="form-control" name="duration" id="duration" required>
+    </div>
+    <div class="container text-center">
+      <button type="submit" class="btn btn-success">Update Course</button>
+    </div>
+
+  </form>
+</div>

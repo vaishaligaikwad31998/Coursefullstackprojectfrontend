@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Delete Course</h2>
+    <p>Are you sure you want to delete the following course?</p>
+    <ul>
+      <li><strong>Id:</strong> {{ course.id }}</li>
+      <li><strong>Title:</strong> {{ course.title }}</li>
+      <li><strong>Description:</strong> {{ course.description }}</li>
+      <li><strong>Duratoin:</strong> {{ course.duration }}</li>
+      
+    </ul>
+    <button class="btn btn-danger" (click)="deleteCourse(course.id)">Confirm Delete</button>
+    <button class="btn btn-secondary" (click)="cancel()">Cancel</button>
+  </div>
